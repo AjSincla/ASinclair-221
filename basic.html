@@ -1,0 +1,148 @@
+<!-- Complete this worksheet in HTML and CSS. Instructions are as comments; you may use reference_sheet.html and the internet to jog your memory on HTML tags and CSS. -->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Basic HTML</title>
+        <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,400,300,600,700&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
+        
+        <style>
+            .alert{
+                height: 100px;
+                width: auto; 
+                border: 2px solid red;
+                margin: 5px auto;
+                text-align: center;
+            }
+            .warning {background: orangered;
+            }
+            #byline {color: red;
+            }
+            #quote {color: darkslategrey;
+            }
+            .book{
+                color: darkslategray;
+                font-size: 16px;
+                font-family: 'Open Sans', serif;
+                width: 50%;
+                border: 1px dotted black;
+            }
+
+            #bargraph {
+                border: 1px solid gray;
+                padding-left: 10px;
+                padding-bottom: 10px;
+                width: 50%;
+            }
+            .bar_label {
+                color: red;
+            }
+            #longest {
+                width: 300px;
+                height: 10px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #longer {
+                height: 10px;
+                width: 200px;
+                background: gray;
+                border: 1px solid red;
+            }
+            #long {
+                height: 10px;
+                width: 100px;
+                background: gray;
+                border: 1px solid red;
+            }
+
+        </style>
+    </head>
+
+    <body>
+    
+    <div class="alert">
+        <h3>Breaking News: AC Milan win breakthrough match in UCL. </h3> 
+        <p id="byline" >By Andrew Sinclair </p>
+    </div>
+        <h1> I'm Andrew Sinclair and I'm a second year Student at Syracuse University!</h1>
+        
+        <h2>My intro</h2>
+        <!-- Include: a brief intro to yourself-->
+        <p> I chose to move from San Diego, California to study at the <strong> SI Newhouse School of Public Communications</strong> here at SU. My parenets are still living in SD, and as an only child the only other person close to family is my girlfriend <i> Ava</i>, who I met here in Syracuse. I enjoy travel, backpacking, driving, and spending my free time with friends. </p>
+        
+
+        <h2> My handles </h2>
+        <!-- Include: at least two handles for your social media accounts -->
+        <p> Here is my <a href="https://www.instagram.com/andrew._.sinclair/" target="_blank"> Instagram</a>, I try not to use it a ton, but will respond to messages usually. I'll add my <a href="https://www.linkedin.com/in/andrewjsinclair1/" target="_blank"> LinkedIn</a> as well for a more profesional platform. 
+
+         <p class="warning" >You have two papers due this week!</p>
+
+        <h2> ~ Challenge: Why is my text maroon? Its not ~</h2>
+        <p>My text is grey.</p>
+
+        <h2>My favorite meme</h2>
+        <!-- Include: "large_wink.png" as an image -->
+        <img src="large_wink.png" alt="meme of katherine hahn winking, used for comedic value" height="300px" width="400px">
+
+        <h2>Why I'm a great student</h2>
+        <!-- Include: Use 'reference_sheet.html' to figure out how to add an unordered list here -->
+        <!-- Tags to use: <ul>, <li>, <strong> -->
+        <ul>
+            <li> Hardworking
+            <li> Resourceful
+            <li> <strong>Determined</strong>
+            <li> analytical
+        </ul>
+    
+        <h2>Top 3 most famous people from my hometown</h2>
+        <!-- Include: an ordered list -->
+        <!-- Tags to use: <ol>, <li>, <a> -->
+        <ol>
+            <li>Adam Driver
+            <li>Tony Hawk
+            <li>Cameron Diaz
+        </ol>
+        <a href="https://lajolla.com/article/famous-people-from-san-diego/" target="_blank"> Source </a>
+        <h2> ~ Challenge: Read my poetry ~</h2>
+        <p> New world to explore <br><p>Endless opportunity<br><p>Joy of knowledge calls</p>
+    
+
+        <h2>This is one of my favorite quotes</h2>
+        <!-- Include: a quote from a book -- quote should be in italics and gray, title of source should be in an <h3> tag -->
+        <!-- Tags to use: <h3>, <p> with an id named 'quote' that is styled in the <style> section -->
+        <p id="quote"><i>If you are distressed by anything external, the pain is not due to the thing itself, but to your estimate of it; and this you have the power to revoke at any moment.</i><h3>-Marcus Aurelius, Meditations.</h3></p>
+
+        <h2>These are more of my favorite books</h2>
+        <!-- Include: an unordered list of at least three books, list items should have a border -->
+        <!-- Tags to use: <ul>, <li> with classes named 'book' that is styled in the <style> section -->
+        <ul>
+            <li class="book"> Wind up bird chonicle -Haruki Murikami
+            <li class="book"> The Maltese Falcon - Samuel Dashiell Hammett
+            <li class= "book"> Casino Royale - Ian Fleming
+        </ul>
+        
+
+        <h2>Here's how I normally spend my weekend</h2>
+        <!-- Include: a complete Datawrapper chart (you can make up data) showing what you normally spend time on over the weekend; must include all requirements of a complete chart (hed, subhed, intentional colors, byline, etc.) -->
+        <!-- Tags to use: <iframe> -->
+        <iframe title="Time spent during weekends for various tasks " aria-label="Grouped Bars" id="datawrapper-chart-TRfNR" src="https://datawrapper.dwcdn.net/TRfNR/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="1424" data-external="1"></iframe><script type="text/javascript">!function(){"use strict";window.addEventListener("message",(function(a){if(void 0!==a.data["datawrapper-height"]){var e=document.querySelectorAll("iframe");for(var t in a.data["datawrapper-height"])for(var r=0;r<e.length;r++)if(e[r].contentWindow===a.source){var i=a.data["datawrapper-height"][t]+"px";e[r].style.height=i}}}))}();
+        </script>
+
+
+        <h3>~ Challenge: A very simple bar graph ~</h3>
+        <!-- Challenge! Add CSS styles to '#longer' and '#long' to make the bar graph look like it's ordered from longest to shortest. You may also change the h4 text and the p text to make this simple bar chart reflect real (or fake) data. -->
+
+        <div id="bargraph">
+            <h4>Length of bars</h4>
+            <p class="bar_label">Longest</p>
+            <div id="longest"></div>
+            <p class="bar_label">Longer</p>
+            <div id="longer"></div>
+            <p class="bar_label">Long</p>
+            <div id="long"></div>
+        </div>
+     
+    </body>
+</html>
